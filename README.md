@@ -45,4 +45,4 @@ The application uses SQLite to store expense data. The database file is named `e
 ## Note
 Ensure to close the application properly to close the database connection. The connection is closed automatically when the application is closed.
 
-Feel free to explore and modify the code to suit your needs!
+Feel free to explore and modify the code to suit your needs! But Please dont push any changes to main branch
