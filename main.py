@@ -1,3 +1,4 @@
+# Import necessary modules
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
 import sqlite3
@@ -17,8 +18,10 @@ cursor.execute('''
 ''')
 conn.commit()
 
+# Define the main class for the Personal Finance Manager application
 class PersonalFinanceManager:
     def __init__(self, root):
+        # Initialize the main window
         self.root = root
         self.root.title("Personal Finance Manager")
 
@@ -52,9 +55,11 @@ class PersonalFinanceManager:
         style.configure("Treeview.Heading", font=("Helvetica", 12), background=button_bg_color, foreground=button_fg_color)
         style.configure("Treeview", font=("Helvetica", 11), background=bg_color)
 
+        # Create the main frame
         self.main_frame = ttk.Frame(root, padding="10", style="TFrame")
         self.main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
 
+        # Add buttons to the main frame
         self.add_expense_button = ttk.Button(self.main_frame, text="Add Expenses", command=self.show_add_expense)
         self.add_expense_button.grid(row=0, column=0, padx=5, pady=5)
 
@@ -67,6 +72,7 @@ class PersonalFinanceManager:
         self.report_window = None  # Initialize the report_window as an instance variable
 
     def show_add_expense(self):
+        # Create a new window for adding expenses
         self.add_expense_window = tk.Toplevel(self.root)
         self.add_expense_window.title("Add Expenses")
 
@@ -93,6 +99,7 @@ class PersonalFinanceManager:
         self.back_button.grid(row=4, column=0, columnspan=2, pady=10)
 
     def submit_expense(self):
+        # Process and submit expense details
         category = self.category_entry.get().strip()
         amount = self.amount_entry.get().strip()
         date_str = self.date_entry.get().strip()
@@ -122,6 +129,7 @@ class PersonalFinanceManager:
         self.add_expense_window.destroy()
 
     def generate_report(self):
+        # Generate and display financial report
         if self.report_window is not None and self.report_window.winfo_exists():
             self.report_window.destroy()
 
@@ -142,6 +150,7 @@ class PersonalFinanceManager:
         self.show_report()
 
     def show_report(self, period=None):
+        # Display expense report based on the specified period
         self.tree.delete(*self.tree.get_children())
         total_expense = 0
 
@@ -167,6 +176,7 @@ class PersonalFinanceManager:
         self.tree.pack(expand=tk.YES, fill=tk.BOTH)
 
     def download_csv(self):
+        # Download expense data as a CSV file
         df = pd.read_sql_query("SELECT * FROM expenses", conn)
         if not df.empty:
             total_expense = df['amount'].sum()
@@ -180,6 +190,7 @@ class PersonalFinanceManager:
             messagebox.showinfo("Info", "No expenses to download.")
 
 if __name__ == "__main__":
+    # Create and run the main application
     root = tk.Tk()
     app = PersonalFinanceManager(root)
     root.mainloop()
