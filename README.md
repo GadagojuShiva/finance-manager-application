@@ -14,7 +14,7 @@ This Python application serves as a simple Personal Finance Manager using the Tk
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/yourusername/Personal-Finance-Manager.git
+    git clone repo url
     cd Personal-Finance-Manager
     ```
 
@@ -139,5 +139,3 @@ To contribute to the development:
     ```bash
     git push origin main
     ```
-
-Feel free to explore and modify the code to suit your needs! But Please dont push any changes to main branch
