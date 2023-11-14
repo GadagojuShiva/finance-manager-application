@@ -109,7 +109,7 @@ Thank you for your understanding.
 To contribute to the development:
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/GadagojuShiva/finance-manager-application
+    git clone [https://github.com/GadagojuShiva/finance-manager-application]
     cd FinanceManager-py07-Dev
     ```
 2. **Make changes and develop code.**
