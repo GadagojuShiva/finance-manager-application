@@ -1,49 +1,59 @@
 # Personal Finance Manager
 
-## Overview
-This Python application serves as a simple Personal Finance Manager using the Tkinter library for the graphical user interface (GUI) and SQLite for data storage. The application allows users to add expenses, generate financial reports, and download expense data in CSV format.
+This Python application serves as a simple Personal Finance Manager using the Tkinter library for the graphical user interface, SQLite for the database, and Pandas for data manipulation. The application allows users to set a budget, add expenses, view their budget, and generate financial reports.
 
-## Features
-- **Add Expenses**: Users can input expense details, including category, amount, and date. The application validates user input for data integrity.
+## Prerequisites
+- Python 3 installed on your system.
+- Required Python packages can be installed using the following command:
 
-- **Generate Financial Report**: Users can view a financial report displaying expenses based on different time periods (All, Monthly, Yearly). The report includes a summary of total expenses and a downloadable option in CSV format.
-
-## How to Execute
-1. **Dependencies**: Ensure you have the required dependencies installed. You can install them using the following:
     ```bash
-    pip install pandas
+    pip install tk tkcalendar pandas
     ```
 
-2. **Run the Application**: Execute the `main.py` file to launch the Personal Finance Manager.
+## Instructions to Execute
+1. **Clone the Repository:**
+
+    ```bash
+    git clone https://github.com/yourusername/Personal-Finance-Manager.git
+    cd Personal-Finance-Manager
+    ```
+
+2. **Run the Application:**
+
     ```bash
     python main.py
     ```
 
-3. **Using the Application**:
-   - Click on "Add Expenses" to input new expenses.
-   - Click on "Generate Financial Report" to view and download expense reports.
-   - Click on "Exit" to close the application.
-
-## Application Workflow
-1. **Add Expenses**:
-   - Click on "Add Expenses" to open a new window.
-   - Enter expense details: Category (alphabetical), Amount (numeric), Date (dd-mm-yyyy).
-   - Click "Submit" to add the expense or "Back" to cancel.
-
-2. **Generate Financial Report**:
-   - Click on "Generate Financial Report" to open a new window.
-   - The default report shows all expenses. You can choose "Monthly" or "Yearly" from the dropdown to filter by time period.
-   - The report includes a Treeview widget displaying Category, Amount, and Date columns.
-   - Total expenses for the selected period are displayed, and you can download the report in CSV format using the "Download CSV" button.
-
-3. **Exit Application**:
-   - Click on "Exit" to close the application.
+## Usage
+- Click on the "Set Budget" button to set your monthly budget.
+- Click on the "View Budget" button to see your current budget.
+- Click on the "Add Expenses" button to add your daily expenses.
+- Click on the "Generate Financial Report" button to view and download expense reports.
 
 ## Database
-The application uses SQLite to store expense data. The database file is named `expenses.db`.
+- The application uses SQLite, and the database file (`expenses.db`) will be created in the project directory.
 
-## Note
-Ensure to close the application properly to close the database connection. The connection is closed automatically when the application is closed.
+**Note:**
+- Make sure to close the application properly to ensure the database connection is closed.
+- The application uses Tkinter, which may have limitations on certain systems (e.g., Mac OS). If you encounter issues, please ensure your Python environment and dependencies are correctly set up.
+
+## How to Use
+1. Set your monthly budget using the "Set Budget" button.
+2. View your current budget using the "View Budget" button.
+3. Add daily expenses using the "Add Expenses" button.
+4. Generate financial reports using the "Generate Financial Report" button, and you can filter reports by year.
+5. Download the expense report in CSV format using the "Download CSV" button.
+
+## Database Schema
+The SQLite database (`expenses.db`) contains a table named `expenses` with the following columns:
+- `id` (INTEGER, Primary Key, Autoincrement)
+- `category` (TEXT)
+- `amount` (REAL)
+- `date` (TEXT)
+
+## Closing the Application
+The application automatically closes the SQLite database connection when the main window is closed.
+
 
 # Project Task Allocation based on Team Member's Skills and Roles
 
