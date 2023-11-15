@@ -94,8 +94,6 @@ Ensure that you have the required prerequisites installed before running the scr
 - **Database Initialization Script:**
   - Write Python script to initialize the database.
 
-- **GitHub Repository:**
-  - (FinanceManager-py07-Dev) Push your files to the GitHub repository. Ensure to add a brief comment while pushing.
 
 ## Team Member 2 (Gadagoju Shiva - Python GUI Development):
 
@@ -111,9 +109,6 @@ Ensure that you have the required prerequisites installed before running the scr
 - **CSV Export Functionality:**
   - Implement CSV export for expense data.
 
-- **GitHub Repository:**
-  - (FinanceManager-py07-Dev) Push your files to the GitHub repository. Ensure to add a brief comment while pushing.
-
 ## Team Member 3 (Shivani - Integration and QA):
 
 - **Integration:**
@@ -127,12 +122,3 @@ Ensure that you have the required prerequisites installed before running the scr
 
 - **Code Review:**
   - Review code for best practices and style.
-
-- **GitHub Repository:**
-  - (FinanceManager-py07-Dev) Push your files, including bug fixes, to the GitHub repository. Ensure to add a brief comment while pushing.
-
-## Note:
-
-**(FinanceManager-py07-Dev)** This repository is designated for ongoing development and is not intended for production use. Once we meet the project requirements and achieve a stable state, a separate repository will be created for production deployment. Please refrain from using the code in this repository for production purposes.
-
-Thank you for your understanding.
