@@ -122,3 +122,8 @@ Ensure that you have the required prerequisites installed before running the scr
 
 - **Code Review:**
   - Review code for best practices and style.
+
+   
+- **Copyright Notice:**
+  - All rights reserved. Strictly subject to copyright laws. © 2023 by gadagojushiva.
+
