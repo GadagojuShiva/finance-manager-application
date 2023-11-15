@@ -136,29 +136,3 @@ Ensure that you have the required prerequisites installed before running the scr
 **(FinanceManager-py07-Dev)** This repository is designated for ongoing development and is not intended for production use. Once we meet the project requirements and achieve a stable state, a separate repository will be created for production deployment. Please refrain from using the code in this repository for production purposes.
 
 Thank you for your understanding.
-
-## Pushing and Pulling Changes:
-
-To contribute to the development:
-1. **Clone the repository:**
-    ```bash
-    git clone repo name
-    cd FinanceManager-py07-Dev
-    ```
-2. **Make changes and develop code.**
-3. **Before pushing changes, ensure you pull the latest updates:**
-    ```bash
-    git pull origin main
-    ```
-4. **Stage your changes:**
-    ```bash
-    git add .
-    ```
-5. **Commit the changes with a date and brief description:**
-    ```bash
-    git commit -m "YYYY-MM-DD: Brief comment describing your changes"
-    ```
-6. **Push to the repository:**
-    ```bash
-    git push origin main
-    ```
