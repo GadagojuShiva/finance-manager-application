@@ -1,58 +1,81 @@
 # Personal Finance Manager
 
-This Python application serves as a simple Personal Finance Manager using the Tkinter library for the graphical user interface, SQLite for the database, and Pandas for data manipulation. The application allows users to set a budget, add expenses, view their budget, and generate financial reports.
+This code is a simple implementation of a Personal Finance Manager using Python's Tkinter for the graphical user interface (GUI), SQLite for database storage, and pandas for data manipulation. Here's a breakdown and explanation of the code:
 
-## Prerequisites
-- Python 3 installed on your system.
-- Required Python packages can be installed using the following command:
+## Purpose
 
-    ```bash
-    pip install tk tkcalendar pandas
-    ```
+The program allows users to manage their personal finances by setting budgets, adding expenses, viewing financial reports, and more.
 
-## Instructions to Execute
-1. **Clone the Repository:**
+## Components
 
-    ```bash
-    git clone repo url
-    cd Personal-Finance-Manager
-    ```
+1. **SQLite Database:**
+   - Two tables are created: `users` for storing user information and `expenses` for storing expense details.
+   - The database is named `expenses.db`.
 
-2. **Run the Application:**
+2. **Class: PersonalFinanceManager:**
+   - Manages the main application and GUI.
 
-    ```bash
-    python main.py
-    ```
+3. **GUI Components:**
+   - Buttons for actions like setting budget, viewing budget, adding expenses, generating financial reports, logging in, registering, and deleting the account.
+   - Windows for login, registration, setting budget, increasing budget, and adding expenses.
 
-## Usage
-- Click on the "Set Budget" button to set your monthly budget.
-- Click on the "View Budget" button to see your current budget.
-- Click on the "Add Expenses" button to add your daily expenses.
-- Click on the "Generate Financial Report" button to view and download expense reports.
-
-## Database
-- The application uses SQLite, and the database file (`expenses.db`) will be created in the project directory.
-
-**Note:**
-- Make sure to close the application properly to ensure the database connection is closed.
-- The application uses Tkinter, which may have limitations on certain systems (e.g., Mac OS). If you encounter issues, please ensure your Python environment and dependencies are correctly set up.
+4. **Functions:**
+   - `validate_login`: Validates user login credentials.
+   - `validate_registration`: Validates new user registration.
+   - `hash_password` and `verify_password`: Hashes and verifies user passwords using SHA-256.
+   - `set_budget`, `view_budget`, `increase_budget`, `submit_increase_budget`: Handle budget-related functionalities.
+   - `show_add_expense`, `submit_expense`, `get_total_expenses`: Handle expense-related functionalities.
+   - `generate_report`, `show_report`, `download_csv`, `get_expenses_by_year`: Generate and display financial reports.
+   - `get_year_options`: Get available years for filtering financial reports.
 
 ## How to Use
-1. Set your monthly budget using the "Set Budget" button.
-2. View your current budget using the "View Budget" button.
-3. Add daily expenses using the "Add Expenses" button.
-4. Generate financial reports using the "Generate Financial Report" button, and you can filter reports by year.
-5. Download the expense report in CSV format using the "Download CSV" button.
 
-## Database Schema
-The SQLite database (`expenses.db`) contains a table named `expenses` with the following columns:
-- `id` (INTEGER, Primary Key, Autoincrement)
-- `category` (TEXT)
-- `amount` (REAL)
-- `date` (TEXT)
+1. **Run the Application:**
+   - Execute the script.
+   - Tkinter window opens with buttons for various financial management actions.
 
-## Closing the Application
-The application automatically closes the SQLite database connection when the main window is closed.
+2. **Login or Register:**
+   - Click on "Login" or "Register" to create an account or log in with existing credentials.
+
+3. **Set Budget:**
+   - Click "Set Budget" to set the budget for financial management.
+
+4. **View and Increase Budget:**
+   - After setting the budget, click "View Budget" to see the current budget.
+   - You can also increase the budget by clicking "Increase Budget."
+
+5. **Add Expenses:**
+   - Click "Add Expenses" to add your daily expenses, specifying category, amount, and date.
+
+6. **Generate Financial Report:**
+   - Click "Generate Financial Report" to view a report of expenses based on selected years.
+
+7. **Delete Account:**
+   - Click "Delete Account" to delete your account permanently.
+
+8. **Log Out:**
+   - Log out using the exit button or closing the application.
+
+## Prerequisites
+
+1. **Python:**
+   - Install Python on your system.
+
+2. **Libraries:**
+   - Install required libraries using `pip install tkinter tkcalendar pandas`.
+
+3. **SQLite:**
+   - No additional installation needed; SQLite comes with Python.
+
+### Note
+
+- **Security:**
+  - This code uses a simple password hashing mechanism. In a real-world application, consider using more secure methods, such as bcrypt.
+- **Data Storage:**
+  - The user's data is stored in a local SQLite database. In a production environment, consider using a more robust database solution.
+
+Ensure that you have the required prerequisites installed before running the script.
+
 
 
 # Project Task Allocation based on Team Member's Skills and Roles
