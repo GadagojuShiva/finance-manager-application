@@ -32,14 +32,22 @@ The program allows users to manage their personal finances by setting budgets, a
 
 1. **Run the Application:**
    - Execute the script.
-   - ![OutPut](https://github.com/GadagojuShiva/finance-manager-application/blob/main/images/1.png)
    - Tkinter window opens with buttons for various financial management actions.
+   - ![OutPut](https://github.com/GadagojuShiva/finance-manager-application/blob/main/images/1.png)
 
 2. **Login or Register:**
-   - Click on "Login" or "Register" to create an account or log in with existing credentials.
+   - Click on "Register" to create an account.
+   - ![OutPut](https://github.com/GadagojuShiva/finance-manager-application/blob/main/images/2.png)
+   - Click on "Login" in with existing credentials.
+   - ![OutPut](https://github.com/GadagojuShiva/finance-manager-application/blob/main/images/4.png)
+   - Login Sucess:
+   - ![OutPut](https://github.com/GadagojuShiva/finance-manager-application/blob/main/images/5.png)
 
 3. **Set Budget:**
    - Click "Set Budget" to set the budget for financial management.
+   - ![OutPut](https://github.com/GadagojuShiva/finance-manager-application/blob/main/images/7.png)
+   - Budget Set Complete:
+   - ![OutPut](https://github.com/GadagojuShiva/finance-manager-application/blob/main/images/9.png)
 
 4. **View and Increase Budget:**
    - After setting the budget, click "View Budget" to see the current budget.
@@ -47,9 +55,13 @@ The program allows users to manage their personal finances by setting budgets, a
 
 5. **Add Expenses:**
    - Click "Add Expenses" to add your daily expenses, specifying category, amount, and date.
+   - ![OutPut](https://github.com/GadagojuShiva/finance-manager-application/blob/main/images/10.png)
+   - Expenses Added:
+   - ![OutPut](https://github.com/GadagojuShiva/finance-manager-application/blob/main/images/11.png)
 
 6. **Generate Financial Report:**
    - Click "Generate Financial Report" to view a report of expenses based on selected years.
+   - ![OutPut](https://github.com/GadagojuShiva/finance-manager-application/blob/main/images/generate_report.png)
 
 7. **Delete Account:**
    - Click "Delete Account" to delete your account permanently.
