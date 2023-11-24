@@ -32,6 +32,7 @@ The program allows users to manage their personal finances by setting budgets, a
 
 1. **Run the Application:**
    - Execute the script.
+   - ![Alt Text](https://github.com/GadagojuShiva/finance-manager-application/blob/main/images/1.png)
    - Tkinter window opens with buttons for various financial management actions.
 
 2. **Login or Register:**
