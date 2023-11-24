@@ -33,7 +33,6 @@ The program allows users to manage their personal finances by setting budgets, a
 1. **Run the Application:**
    - Execute the script.
    - Tkinter window opens with buttons for various financial management actions.
-   - ![alt text for screen readers](/path/to/image.png "Text to show on mouseover")
 
 2. **Login or Register:**
    - Click on "Login" or "Register" to create an account or log in with existing credentials.
